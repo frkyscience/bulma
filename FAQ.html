@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"> </script>
+    <style>
+        .custom-gradient-background {
+            background: rgb(238, 174, 202);
+            background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar is-hidden-mobile" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <img src="https://banner2.cleanpng.com/20180411/hfe/kisspng-domain-name-registrar-name-generic-top-level-doma-name-5acdcf40961135.9051342915234373766147.jpg"
+                    width="100" height="100">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="index.html" class="navbar-item">
+                    Home
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        More
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a href="login.html" class="navbar-item">
+                            login
+                        </a>
+                        <a href="faq.html" class="navbar-item">
+                            FAQ
+                        </a>
+                        <a href="Contact.html" class="navbar-item">
+                            Contact
+                        </a>
+                        <hr class="navbar-divider">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                            Log in
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="container">
+            <h1 class="title has-text-centered">Frequently Asked Questions</h1>
+            <div class="accordion" id="faqAccordion">
+                <div class="card">
+                    <div class="card-header">
+                        <p class="card-header-title">
+                            <a class="has-text-dark" data-toggle="collapse" href="#faq1">Vraag 1? : Voor wie is het</a>
+                        </p>
+                    </div>
+                    <div id="faq1" class="collapse">
+                        <div class="card-content">
+                            Het is voor studenten en voor leraren
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <p class="card-header-title">
+                            <a class="has-text-dark" data-toggle="collapse" href="#faq2">Vraag 2?: Prijs</a>
+                        </p>
+                    </div>
+                    <div id="faq2" class="collapse">
+                        <div class="card-content">
+                            Voor nu is deze Alpha gratis maar in de toekomst komt er een subscription
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar  custom-gradient-background is-fixed-bottom is-hidden-tablet" role="navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item is-expanded is-block has-text-centered" href="login.html">
+                    <i class="fa fa-user"></i>
+                    <p class="is-size-7">Account</p>
+                </a>
+                <a class="navbar-item is-expanded is-block has-text-centered" href="index.html">
+                    <i class="fa fa-list"></i>
+                    <p class="is-size-7">Taken</p>
+                </a>
+                <a class="navbar-item is-expanded is-block has-text-centered" href="admin.html">
+                    <i class="fa-solid fa-message"></i>
+                    <p class="is-size-7">Admin</p>
+                </a>
+                <a class="navbar-item is-expanded is-block has-text-centered" href="more.html">
+                    <i class="fa fa-cog"></i>
+                    <p class="is-size-7">more</p>
+                </a>
+            </div>
+        </nav>
+    </section>
+
+</body>
+
+</html>
